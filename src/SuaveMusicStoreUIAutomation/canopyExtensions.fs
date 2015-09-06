@@ -9,7 +9,7 @@ let goto = canopy.core.url
 let fastTextFromCSS selector =
   let script =
     //there is no map on NodeList which is the type returned by querySelectorAll =(
-    sprintf """return [].map.call(document.querySelectorAll("%s"), function (item) { return item.text || item.innerText; });""" selector
+    sprintf """return [].map.call(document.querySelectorAll("%s"), function (item) { return item.text || item.innerText  || item.textContent; });""" selector
   try
     js script :?> System.Collections.ObjectModel.ReadOnlyCollection<System.Object>
     |> Seq.map (fun item -> item.ToString())

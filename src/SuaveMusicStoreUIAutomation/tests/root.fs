@@ -8,7 +8,10 @@ open page_root
 
 let smoke () =
 
-  before (fun _ -> goto page_root.url)
+  once (fun _ -> goto page_root.url)
+
+  "header" &&& fun _ ->
+    displayed "F# Suave Music Store"
 
   "title is correct" &&& fun _ ->
     title() === "Suave Music Store"
@@ -28,18 +31,24 @@ let smoke () =
       "Classical"
     ]
 
-  "" &&& fun _ ->
-    ()
+  "fresh off the grill" &&& fun _ ->
+    freshOffTheGrill *=*
+    [
+      "Ace Of Spades"
+      "For Those About To Rock We Salute You"
+    ]
 
-  "" &&& fun _ ->
-    ()
+  "logon link displayed" &&& fun _ ->
+    displayed "Log on"
 
-  "" &&& fun _ ->
-    ()
-
-  "" &&& fun _ ->
-    ()
-
+  "links" &&& fun _ ->
+    links *=*
+    [
+      "Home"
+      "Store"
+      "Cart (0)"
+      "Admin"
+    ]
 
 let all () =
   smoke ()
