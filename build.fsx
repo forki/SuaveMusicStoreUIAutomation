@@ -65,6 +65,8 @@ let gitRaw = environVarOrDefault "gitRaw" "https://raw.github.com/lefthandedgoat
 // Read additional information from the release notes document
 let release = LoadReleaseNotes "RELEASE_NOTES.md"
 
+let buildDir = ".//src/SuaveMusicStoreUIAutomation/bin/Debug/"
+
 // Helper active pattern for project types
 let (|Fsproj|Csproj|Vbproj|) (projFileName:string) =
     match projFileName with
@@ -178,6 +180,15 @@ Target "Release" (fun _ ->
     |> Async.RunSynchronously
 )
 
+Target "RunExe" (fun _ ->
+    let result =
+        ExecProcess (fun info ->
+            info.FileName <- (buildDir @@ "SuaveMusicStoreUIAutomation.exe")
+        ) (System.TimeSpan.FromMinutes 5.)
+
+    if result <> 0 then failwith "Failed result from canopy unit tests"
+)
+
 Target "BuildPackage" DoNothing
 
 // --------------------------------------------------------------------------------------
@@ -189,6 +200,7 @@ Target "All" DoNothing
   ==> "AssemblyInfo"
   ==> "Build"
   ==> "CopyBinaries"
+  ==> "RunExe"
   ==> "All"
 
 "All"
