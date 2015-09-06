@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{F190762C-AEBE-4E9B-84FB-5065B8640B38}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>SuaveMusicStoreUIAutomation</RootNamespace>
     <AssemblyName>SuaveMusicStoreUIAutomation</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
