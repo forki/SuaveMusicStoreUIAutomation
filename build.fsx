@@ -65,7 +65,7 @@ let gitRaw = environVarOrDefault "gitRaw" "https://raw.github.com/lefthandedgoat
 // Read additional information from the release notes document
 let release = LoadReleaseNotes "RELEASE_NOTES.md"
 
-let buildDir = ".//src/SuaveMusicStoreUIAutomation/bin/Debug/"
+let buildDir = "./bin/SuaveMusicStoreUIAutomation/"
 
 // Helper active pattern for project types
 let (|Fsproj|Csproj|Vbproj|) (projFileName:string) =
