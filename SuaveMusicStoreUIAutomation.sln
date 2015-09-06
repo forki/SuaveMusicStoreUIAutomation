@@ -7,8 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{63297B
 		paket.lock = paket.lock
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{A6A6AF7D-D6E3-442D-9B1E-58CC91879BE1}"
-EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SuaveMusicStoreUIAutomation", "src\SuaveMusicStoreUIAutomation\SuaveMusicStoreUIAutomation.fsproj", "{F190762C-AEBE-4E9B-84FB-5065B8640B38}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "project", "project", "{BF60BC93-E09B-4E5F-9D85-95A519479D54}"
@@ -23,16 +21,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{83F16175
 		docs\tools\generate.fsx = docs\tools\generate.fsx
 		docs\tools\templates\template.cshtml = docs\tools\templates\template.cshtml
 	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "content", "content", "{8E6D5255-776D-4B61-85F9-73C37AA1FB9A}"
-	ProjectSection(SolutionItems) = preProject
-		docs\content\index.fsx = docs\content\index.fsx
-		docs\content\tutorial.fsx = docs\content\tutorial.fsx
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{ED8079DD-2B06-4030-9F0F-DC548F98E1C4}"
-EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SuaveMusicStoreUIAutomation.Tests", "tests\SuaveMusicStoreUIAutomation.Tests\SuaveMusicStoreUIAutomation.Tests.fsproj", "{94C360DA-2358-4A4B-A215-549C2417C4AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
