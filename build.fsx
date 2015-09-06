@@ -196,6 +196,8 @@ Target "BuildPackage" DoNothing
 
 Target "All" DoNothing
 
+Target "Default" DoNothing
+
 "Clean"
   ==> "AssemblyInfo"
   ==> "Build"
@@ -213,4 +215,7 @@ Target "All" DoNothing
 "BuildPackage"
   ==> "Release"
 
-RunTargetOrDefault "All"
+"RunExe"
+  ==> "Default"
+
+RunTargetOrDefault "Default"
