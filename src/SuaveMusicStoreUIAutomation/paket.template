@@ -1,0 +1,23 @@
+type project
+owners
+    Chris Holt
+authors 
+    Chris Holt
+projectUrl
+    http://github.com/lefthandedgoat/SuaveMusicStoreUIAutomation
+iconUrl
+    https://raw.githubusercontent.com/lefthandedgoat/SuaveMusicStoreUIAutomation/master/docs/files/img/logo.png
+licenseUrl
+    http://github.com/lefthandedgoat/SuaveMusicStoreUIAutomation/blob/master/LICENSE.txt
+requireLicenseAcceptance
+    false
+copyright
+    Copyright 2015
+tags
+    demo
+summary
+    UI Automation for the Suave Music Store
+description
+    UI Automation for the Suave Music Store
+
+
