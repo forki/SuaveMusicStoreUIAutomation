@@ -7,7 +7,7 @@ open common
 open page_genres
 
 let smoke () =
-  context "Smoke: root"
+  context "Smoke: genres"
 
   once (fun _ -> goto page_root.url)
 

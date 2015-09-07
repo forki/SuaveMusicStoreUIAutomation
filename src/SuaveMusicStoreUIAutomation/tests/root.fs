@@ -37,6 +37,7 @@ let smoke () =
     [
       "Ace Of Spades"
       "For Those About To Rock We Salute You"
+      "Revelations"
     ]
 
   "logon link displayed" &&& fun _ ->

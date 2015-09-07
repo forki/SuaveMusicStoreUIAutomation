@@ -14,6 +14,7 @@ start firefox
 //setup tests
 root.all()
 genres.all()
+detail.all()
 
 run()
 
