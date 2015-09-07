@@ -3,6 +3,8 @@ module program
 open canopy
 open runner
 open types
+open configuration
+open reporters
 
 canopy.configuration.autoPinBrowserRightOnLaunch <- false
 canopy.configuration.compareTimeout <- 2.0
@@ -16,6 +18,7 @@ root.all()
 genres.all()
 detail.all()
 cart.all()
+admin.all()
 
 run()
 
