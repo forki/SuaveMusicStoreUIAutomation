@@ -13,6 +13,7 @@ start firefox
 
 //setup tests
 root.all()
+genres.all()
 
 run()
 

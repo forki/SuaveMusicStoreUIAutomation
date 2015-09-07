@@ -7,6 +7,7 @@ open common
 open page_root
 
 let smoke () =
+  context "Smoke: root"
 
   once (fun _ -> goto page_root.url)
 
