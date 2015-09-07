@@ -15,6 +15,7 @@ start firefox
 root.all()
 genres.all()
 detail.all()
+cart.all()
 
 run()
 

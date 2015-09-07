@@ -6,4 +6,3 @@ open common
 //selectors
 
 //helpers
-let for' value = sprintf "[data-uia-for='%s']" value

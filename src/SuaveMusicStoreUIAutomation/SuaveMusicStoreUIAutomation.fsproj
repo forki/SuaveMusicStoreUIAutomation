@@ -46,11 +46,14 @@
     <Compile Include="common.fs" />
     <Compile Include="canopyExtensions.fs" />
     <Compile Include="pages\page_root.fs" />
+    <Compile Include="pages\page_logon.fs" />
     <Compile Include="pages\page_genres.fs" />
     <Compile Include="pages\page_details.fs" />
+    <Compile Include="pages\page_cart.fs" />
     <Compile Include="tests\root.fs" />
     <Compile Include="tests\genres.fs" />
     <Compile Include="tests\detail.fs" />
+    <Compile Include="tests\cart.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <PropertyGroup>
