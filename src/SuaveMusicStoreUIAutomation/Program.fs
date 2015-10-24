@@ -6,10 +6,10 @@ open types
 open configuration
 open reporters
 
-canopy.configuration.autoPinBrowserRightOnLaunch <- false
-canopy.configuration.compareTimeout <- 2.0
-canopy.configuration.elementTimeout <- 2.0
-canopy.configuration.pageTimeout <- 2.0
+autoPinBrowserRightOnLaunch <- false
+compareTimeout <- 2.0
+elementTimeout <- 2.0
+pageTimeout <- 2.0
 
 start firefox
 
