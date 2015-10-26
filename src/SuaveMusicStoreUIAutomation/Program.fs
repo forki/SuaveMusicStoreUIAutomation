@@ -6,12 +6,12 @@ open types
 open configuration
 open reporters
 
-autoPinBrowserRightOnLaunch <- false
 compareTimeout <- 2.0
 elementTimeout <- 2.0
 pageTimeout <- 2.0
 
 start firefox
+pin FullScreen
 
 //setup tests
 root.all()
